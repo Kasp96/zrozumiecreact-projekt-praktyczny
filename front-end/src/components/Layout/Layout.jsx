@@ -1,11 +1,21 @@
-import { Footer } from "../Footer/Footer";
-import { MainContent } from "../MainContent/MainContent";
-
+import { CurrencySelector } from '../CurrencySelector/CurrencySelector';
+import { Footer } from '../Footer/Footer';
+import { IconMenu } from '../IconMenu/IconMenu';
+import { Logo } from '../Logo/Logo';
+import { MainContent } from '../MainContent/MainContent';
+import { MainMenu } from '../MainMenu/MainMenu';
+import { TopBar } from '../TopBar/TopBar';
 export const Layout = () => {
-  return (
-    <>
-      <MainContent />
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<MainContent />
+			<TopBar>
+				<MainMenu />
+				<Logo />
+				<CurrencySelector />
+				<IconMenu />
+			</TopBar>
+			<Footer />
+		</>
+	);
 };

@@ -1,9 +1,9 @@
-import { TopBar } from "../TopBar/TopBar";
+import { TopBar } from '../TopBar/TopBar';
 
 export const MainContent = () => {
-  return (
-    <>
-      <TopBar />
-    </>
-  );
+	return (
+		<>
+			<TopBar />
+		</>
+	);
 };

@@ -1,6 +1,8 @@
-import { GENDERS } from '../../constants/genders';
+import { GENDERS } from '../../constants/categories';
 import { NavLink } from 'react-router-dom';
 import styles from '../MainMenu/MainMenu.module.css';
+
+
 
 export const MainMenu = () => {
 	return (

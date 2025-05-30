@@ -1,0 +1,19 @@
+import styles from "../CategoryMenu/CategoryMenu.module.css";
+import { CATEGORIES } from "../../constants/categories";
+import { NavLink } from "react-router-dom";
+
+export const CategoryMenu = () => {
+  return (
+    <div className={styles.categoryMenu}>
+      <ul>
+        {CATEGORIES.map((category) => {
+          return (
+            <li key={category.path}>
+              <NavLink to={category.path}>{category.categoryName}</NavLink>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+};

@@ -1,0 +1,10 @@
+.fullWidthButton  {
+  padding: 1rem 0;
+  border: none;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-white);
+  text-transform: uppercase;
+  background: var(--color-theme-main);
+}

@@ -1,9 +1,5 @@
-import { TopBar } from '../TopBar/TopBar';
+import style from '../MainContent/MainContent.module.css'
 
-export const MainContent = () => {
-	return (
-		<>
-			<TopBar />
-		</>
-	);
+export const MainContent = ({ children }) => {
+  return <div className={style.mainContent}>{children}</div>;
 };

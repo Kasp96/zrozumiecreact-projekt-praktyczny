@@ -1,0 +1,28 @@
+.cartSummary {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding-right: 1rem;
+	margin-top: 1rem;
+	width: 28rem;
+}
+.cartSummary h3 {
+	padding-bottom: 1rem;
+	font-size: 1.5rem;
+	font-weight: 700;
+	border-bottom: 1px solid var(--color-text-grey);
+}
+.cartSummary div {
+	display: flex;
+	justify-content: space-between;
+}
+.cartSummary span {
+	font-weight: 700;
+}
+.details {
+	padding: 1rem;
+	background: var(--color-grey);
+}
+.details p {
+	font-weight: 700;
+}

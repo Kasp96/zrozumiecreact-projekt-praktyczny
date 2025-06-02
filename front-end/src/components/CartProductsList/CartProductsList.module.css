@@ -1,0 +1,9 @@
+.cartProductsWrapper {
+	padding: 1rem;
+	background-color: var(--color-grey);
+	margin-top: 1rem;
+}
+.cartProductsWrapper h2 {
+	font-size: 3rem;
+	font-weight: 700;
+}

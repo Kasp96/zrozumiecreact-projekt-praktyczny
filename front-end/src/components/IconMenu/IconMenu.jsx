@@ -9,13 +9,13 @@ export const IconMenu = () => {
 	return (
 		<ul className={styles.iconMenu}>
 			<li>
-				<Link to={'/ulubione'}>
+				<Link to={'/koszyk'}>
 					<img src={BAG_ICON} />
 				</Link>
 			</li>
 
 			<li>
-				<Link to={'/koszyk'}>
+				<Link to={'/ulubione'}>
 					<img src={HEART_ICON} />
 					<div className={styles.numberOfProducts}>{cartItems}</div>
 				</Link>

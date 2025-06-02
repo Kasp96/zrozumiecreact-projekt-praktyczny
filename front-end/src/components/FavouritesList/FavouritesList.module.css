@@ -1,0 +1,9 @@
+.favouritesWrapper {
+	margin-top: 1rem;
+	padding: 1rem;
+	background: var(--color-grey);
+}
+.favouritesWrapper h2 {
+	font-size: 3rem;
+	font-weight: 700;
+}

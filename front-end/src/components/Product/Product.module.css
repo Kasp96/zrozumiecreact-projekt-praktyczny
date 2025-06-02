@@ -1,4 +1,28 @@
-.productImg {
-    width: 255px;
-    height: 400px;
+.product {
+	position: relative;
+}
+
+.product img {
+	width: 250px;
+	height: 300px;
+}
+.product h3 {
+	font-weight: 700;
+	margin-block: 0.5rem;
+}
+.product p {
+	color: var(--color-price);
+	margin-bottom: 1rem;
+}
+.heart {
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-image: url('../../assets/heart.svg');
+	background-repeat: no-repeat;
+}
+.heart:hover {
+	background-image: url('../../assets/heart-full.svg');
 }

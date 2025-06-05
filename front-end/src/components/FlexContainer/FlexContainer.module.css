@@ -4,5 +4,5 @@
 	width: 100%;
 	max-width: 100rem;
 	margin: 0 auto;
-	border: 2px solid purple;
+	align-items: flex-start;
 }

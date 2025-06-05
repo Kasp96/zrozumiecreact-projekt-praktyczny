@@ -1,5 +1,9 @@
 import { Layout } from '../../components/Layout/Layout';
 import { FlexContainer } from '../../components/FlexContainer/FlexContainer';
+import { ExpandableMenu } from '../../components/ExpandableMenu/ExpandableMenu';
+import { Broadcrumbs } from '../../components/Broadcrumbs/Broadcrumbs';
+import { Pagination } from '../../components/Pagination/Pagination';
+import { Products } from '../../components/Products/Products';
 
 export const ProductsList = () => {
 	const products = [
@@ -159,7 +163,14 @@ export const ProductsList = () => {
 
 	return (
 		<Layout>
-			{/* <FlexContainer /> */}
+			<FlexContainer>
+				<ExpandableMenu />
+				<div>
+					<Broadcrumbs headingText='Swetry' />
+					<Products products={products} headerText='Swetry' />
+					<Pagination numberOfPages={5} />
+				</div>
+			</FlexContainer>
 		</Layout>
 	);
 };

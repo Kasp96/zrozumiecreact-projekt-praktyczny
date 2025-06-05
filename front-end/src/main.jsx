@@ -7,12 +7,17 @@ import { MainPage } from './views/MainPage/MainPage';
 import { Favourites } from './views/Favourites/Favourites';
 import { Cart } from './views/Cart/Cart';
 import { ProductsList } from './views/ProductsList/ProductsList';
+import { ProductDetails } from './views/ProductDetails/ProductDetails';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <MainPage />,
+		element: <ProductDetails />,
 	},
+	// {
+	// 	path: '/',
+	// 	element: <MainPage />,
+	// },
 	{
 		path: '/ulubione',
 		element: <Favourites />,

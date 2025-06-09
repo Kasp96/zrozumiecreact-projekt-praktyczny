@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Layout } from '../../components/Layout/Layout';
 import { FlexContainer } from '../../components/FlexContainer/FlexContainer';
 import { CartSummary } from '../../components/CartSummary/CartSummary';
 import { CartProductsPriceContext } from '../../contexts/CartProductsPriceContext';
@@ -73,13 +72,11 @@ export const Cart = () => {
 	}, []);
 
 	return (
-		<Layout>
-			<FlexContainer>
-				<CartProductsList products={products} />
-				<CartProductsPriceContext.Provider value={[productsPrice]}>
-					<CartSummary />
-				</CartProductsPriceContext.Provider>
-			</FlexContainer>
-		</Layout>
+		<FlexContainer>
+			<CartProductsList products={products} />
+			<CartProductsPriceContext.Provider value={[productsPrice]}>
+				<CartSummary />
+			</CartProductsPriceContext.Provider>
+		</FlexContainer>
 	);
 };

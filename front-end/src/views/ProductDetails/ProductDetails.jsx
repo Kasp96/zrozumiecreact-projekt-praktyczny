@@ -30,11 +30,13 @@ export const ProductDetails = () => {
 		<Layout>
 			<FlexContainer>
 				<ExpandableMenu />
-				<div>
+				<div style={{ width: '100%' }}>
 					<Broadcrumbs />
-					<Photos product={product} />
+					<FlexContainer>
+						<Photos product={product} />
+						<Details product={product} />
+					</FlexContainer>
 				</div>
-				{/* <Details /> */}
 			</FlexContainer>
 		</Layout>
 	);

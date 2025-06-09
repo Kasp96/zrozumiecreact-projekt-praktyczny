@@ -3,32 +3,41 @@ import './styles/globals.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { MainPage } from './views/MainPage/MainPage';
 import { Favourites } from './views/Favourites/Favourites';
 import { Cart } from './views/Cart/Cart';
 import { ProductsList } from './views/ProductsList/ProductsList';
-import { ProductDetails } from './views/ProductDetails/ProductDetails';
+import { Layout } from './components/Layout/Layout';
+import { MainPage } from './views/MainPage/MainPage';
+import { MainPageLoader } from './api/mainPageLoader';
+import { productListLoader } from './api/ProductListLoader';
 
 const router = createBrowserRouter([
 	{
-		path: '/',
-		element: <ProductDetails />,
-	},
-	// {
-	// 	path: '/',
-	// 	element: <MainPage />,
-	// },
-	{
-		path: '/ulubione',
-		element: <Favourites />,
-	},
-	{
-		path: '/koszyk',
-		element: <Cart />,
-	},
-	{
-		path: '/lista-produktow',
-		element: <ProductsList />,
+		path: '',
+		element: <Layout />,
+
+		children: [
+			{
+				path: '/ulubione',
+				element: <Favourites />,
+			},
+			{
+				path: '/koszyk',
+				element: <Cart />,
+			},
+
+			{
+				path: '/:gender?',
+				element: <MainPage />,
+				loader: MainPageLoader,
+			},
+
+			{
+				path: '/:gender/:category',
+				element: <ProductsList />,
+				loader: productListLoader,
+			},
+		],
 	},
 ]);
 

@@ -27,7 +27,7 @@ export const Photos = ({ product }) => {
 				})}
 			</div>
 			<img className={styles.largePhoto} src={currentPhoto} />
-			<Details />
+			
 		</FlexContainer>
 	);
 };

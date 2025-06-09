@@ -6,7 +6,8 @@ import { IconMenu } from '../IconMenu/IconMenu';
 import { Logo } from '../Logo/Logo';
 import { MainMenu } from '../MainMenu/MainMenu';
 import { TopBar } from '../TopBar/TopBar';
-export const Layout = ({ children }) => {
+import { Outlet } from 'react-router-dom';
+export const Layout = () => {
 	return (
 		<>
 			<MainContent>
@@ -19,7 +20,7 @@ export const Layout = ({ children }) => {
 					</div>
 				</TopBar>
 				<CategoryMenu />
-				{children}
+				<Outlet />
 			</MainContent>
 			<Footer />
 		</>

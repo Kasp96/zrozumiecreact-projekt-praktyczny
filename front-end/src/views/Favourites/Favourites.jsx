@@ -42,9 +42,5 @@ export const Favourites = () => {
 				'Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu',
 		},
 	];
-	return (
-		<Layout>
-			<FavouritesList products={favouriteProducts} />
-		</Layout>
-	);
+	return <FavouritesList products={favouriteProducts} />;
 };
